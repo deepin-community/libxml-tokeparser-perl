@@ -1,15 +1,33 @@
-Source: template-repository
-Section: unknown
+Source: libxml-tokeparser-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Nathan Scott <nathans@debian.org>
+Section: perl
 Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Build-Depends: debhelper-compat (= 13)
+Build-Depends-Indep: perl,
+                     libxml-parser-perl
+Standards-Version: 4.6.1
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libxml-tokeparser-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libxml-tokeparser-perl.git
+Homepage: https://metacpan.org/release/XML-TokeParser
+Testsuite: autopkgtest-pkg-perl
 
-Package: template-repository
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Package: libxml-tokeparser-perl
+Architecture: all
+Depends: libxml-parser-perl,
+         ${perl:Depends},
+         ${misc:Depends}
+Description: Simplified interface to XML::Parser
+ XML::TokeParser provides a procedural ("pull mode") interface to XML::Parser
+ in much the same way that Gisle Aas' HTML::TokeParser provides a procedural
+ interface to HTML::Parser. XML::TokeParser splits its XML input up into
+ "tokens", each corresponding to an XML::Parser event.
+ .
+ A token is a bless'd reference to an array whose first element is an
+ event-type string and whose last element is the literal text of the XML
+ input that generated the event, with intermediate elements varying according
+ to the event type.
+ .
+ Each token is an object of type XML::TokeParser::Token. Read
+ XML::TokeParser::Token in the XML::TokeParser(3pm) manpage to learn what
+ methods are available for inspecting the token, and retrieving data from it.

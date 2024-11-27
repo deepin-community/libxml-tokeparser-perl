@@ -1,5 +1,57 @@
-template-repository (1.0-1) unstable; urgency=medium
+libxml-tokeparser-perl (0.05-5) unstable; urgency=medium
 
-  * Initial release
+  [ Bas Couwenberg ]
+  * Team upload.
+  * Bump Standards-Version to 4.6.1, no changes.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+  [ Debian Janitor ]
+  * Bump debhelper from old 12 to 13.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Sat, 19 Nov 2022 16:50:41 +0000
+
+libxml-tokeparser-perl (0.05-4) unstable; urgency=medium
+
+  * Team upload.
+    (closes: #1001979)
+  * Restructure control file with cme.
+  * Make Debian Perl Group the Maintainer, move Nathan to Uploaders.
+  * Add Vcs-* URLs.
+  * Add gbp.conf to use pristine-tar & --source-only-changes by default.
+  * Update watch file to use version 4 and metacpan.org.
+  * Update Homepage and Source URL to use metacpan.org.
+  * Update copyright file to use copyright-format 1.0.
+  * Use dh sequencer and compat level 12.
+    (closes: #999272)
+  * Bump Standards-Version to 4.6.0, changes:
+    - copyright-format 1.0
+    - Vcs-* fields
+  * Improve package description.
+  * Use autopkgtest-pkg-perl Testsuite.
+  * Enable Salsa CI.
+
+ -- Bas Couwenberg <sebastic@debian.org>  Sun, 09 Jan 2022 06:35:51 +0100
+
+libxml-tokeparser-perl (0.05-3.1) unstable; urgency=medium
+
+  * Non maintainer upload by the Reproducible Builds team.
+  * No source change upload to rebuild on buildd with .buildinfo files.
+
+ -- Holger Levsen <holger@debian.org>  Sun, 03 Jan 2021 13:57:25 +0100
+
+libxml-tokeparser-perl (0.05-3) unstable; urgency=low
+
+  * Updates for inclusion in Debian (closes: #598905)
+
+ -- Nathan Scott <nathans@debian.org>  Sun, 3 Oct 2010 11:00:36 +1100
+
+libxml-tokeparser-perl (0.05-2) gutsy; urgency=low
+
+  * Add build-dep for libxml-parser-perl
+
+ -- Mark A. Hershberger <mhershberger@intrahealth.org>  Mon, 14 Jan 2008 14:26:50 -0500
+
+libxml-tokeparser-perl (0.05-1) gutsy; urgency=low
+
+  * Initial Release.
+
+ -- Mark A. Hershberger <mhershberger@intrahealth.org>  Sun, 13 Jan 2008 14:54:42 -0500
